@@ -1,8 +1,13 @@
 @import 'base/colors';
-@import 'base/typography';
+@import 'base/typo';
 
 @import 'components/buttons';
 
 @import 'layout/navigation';
 
-@import 'pages/home';
+@import 'pages/landing';
+
+body{
+    padding: 0;
+    margin: 0;
+}
