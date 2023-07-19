@@ -2,4 +2,63 @@
     height: 100vh;
     width: 100vw;
     background-color: $black-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-page h1{
+    margin-bottom: .10em;
+}
+
+// Circle animation
+
+.landing-page .body-display{
+    margin-top: 10vh;
+    margin-bottom: -20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-page .circle {
+    height: 160px;
+    width: 160px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle2 {
+    height: 90px;
+    width: 90px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page .circle3 {
+    height: 50px;
+    width: 50px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.landing-page .anim-pulse {
+    animation: 2.5s pulse infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: scale3d(0, 0, 0);
+    }
+    100% {
+        opacity: 0;
+    }
 }
