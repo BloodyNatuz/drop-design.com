@@ -6,8 +6,15 @@
     font-size: 13vw;
 }
 
+@media (max-width: 768px) {
+    .landing-page h1{
+        font-size: 5em;
+    }
+}
+
 .landing-page #baseline{
     color: $white-color;
     opacity: .87;
     font-size: 14pt;
 }
+
