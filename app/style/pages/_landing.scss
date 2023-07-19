@@ -1,7 +1,6 @@
 .landing-page{
     height: 100vh;
     width: 100vw;
-    background-color: $black-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,5 +59,17 @@
     }
     100% {
         opacity: 0;
+    }
+}
+
+// RESPONSIVE MOBILE
+
+@media (max-width: 768px) {
+    .landing-page h1{
+        margin-bottom: 1em;
+    }
+
+    .landing-page #baseline{
+        font-size: 1.5em;
     }
 }
