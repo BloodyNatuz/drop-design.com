@@ -23,8 +23,23 @@ const montserrat = Montserrat({
 export default function Landing() {
   return (
     <main className='landing-page'>
-      <h1 className={montserrat.className}>DROP DESIGN</h1>
-      <SpanAleatColor className={roboto.className}/>
+      <div className={roboto.className}>
+        <h1 className={montserrat.className}>DROP DESIGN</h1>
+        <SpanAleatColor />
+        
+        <a href="#">
+          <div class="body-display">
+              <div class="box-display">
+                  <div class="circle anim-pulse">
+                    <div class="circle2">
+                      <div class="circle3 anim-pulse">
+                      </div>                 
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </a>
+      </div>
     </main>
   )
 }
