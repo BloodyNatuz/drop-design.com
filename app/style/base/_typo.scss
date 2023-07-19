@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 // LANDING PAGE
 
 .landing-page h1{
     color: $white-color;
     opacity: .87;
     font-size: 13vw;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 768px) {
