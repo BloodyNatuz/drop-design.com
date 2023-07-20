@@ -12,7 +12,9 @@
     "lint": "next lint"
   },
   "devDependencies": {
+    "@types/react": "18.2.15",
     "mini-css-extract-plugin": "^2.7.6",
-    "sass": "^1.63.6"
+    "sass": "^1.63.6",
+    "typescript": "5.1.6"
   }
 }
