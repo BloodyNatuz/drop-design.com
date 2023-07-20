@@ -1,3 +1,7 @@
+.section-scroll{
+    height: 100vh;
+}
+
 .landing-page > div{
     height: 90vh;
     width: 99vw;
@@ -84,5 +88,72 @@
 
     .landing-page #baseline{
         font-size: 1.5em;
+    }
+}
+
+
+// USE SECTION
+
+.section-scroll h2{
+    height: 8vh;
+    padding-top: 2vh;
+}
+
+.use-section{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.use-section .use-left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.use-section .use-left .use-part{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.use-section .use-left .use-part .use-content{
+    margin-left: -5em;
+}
+
+.use-section .use-right .use-part{
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.use-section .use-right .use-part .use-content{
+    text-align: right;
+    margin-right: -5em;
+}
+
+.use-section .use-content{
+    width: 40%;
+}
+
+.use-section img{
+    height: 20vh;
+    width: auto;
+}
+
+// USE SECTION RESPONSIVE MOBILE
+
+@media (max-width: 1000px) {
+    .use-section{
+        flex-direction: column;
     }
 }
