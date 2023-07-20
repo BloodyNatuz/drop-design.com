@@ -3,10 +3,12 @@
 import SpanAleatColor from './components/client/baselineColorAleat'
 import { motion, AnimatePresence } from "framer-motion"
 import main from './style/main.scss'
+import Navbar from './components/client/navbar'
 
 export default function Landing() {
   return (
     <AnimatePresence mode='wait'>
+      <Navbar home="isActive"/>
       <motion.main className='landing-page' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 2, delay: .2 }}>
         <div>
           <h1>DROP DESIGN</h1>

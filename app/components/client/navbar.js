@@ -23,7 +23,7 @@ export default function Navbar(nav) {
     return (
         <>
         <motion.div className='mobile-menu'>
-            <Link href="/pages/home" className={nav.home}>Home</Link>
+            <Link href="/" className={nav.home}>Home</Link>
             <Link href="/pages/news" className={nav.news}>News</Link>
             <Link href="/pages/contact" className={nav.contact}>Contact</Link>
 
@@ -38,7 +38,7 @@ export default function Navbar(nav) {
 
                 <div className="nav-part-int">
                     <div className='desktop'>
-                        <Link href="/pages/home" className={nav.home}>Home</Link>
+                        <Link href="/" className={nav.home}>Home</Link>
                         <Link href="/pages/news" className={nav.news}>News</Link>
                         <Link href="/pages/contact" className={nav.contact}>Contact</Link>
                     </div>
