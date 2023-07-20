@@ -4,6 +4,7 @@ import { motion, AnimatePresence, Variant } from "framer-motion"
 
 export default function Navbar(nav) {
 
+    // Navbar mobile/desktop
     function menuOpen(){
         //recuperer mobile-menu
         let menu = document.querySelector('.mobile-menu')
