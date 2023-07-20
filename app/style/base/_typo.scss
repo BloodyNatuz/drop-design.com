@@ -5,11 +5,43 @@
     font-family: 'Roboto', sans-serif;
 }
 
+// NAVBAR
+
+.mobile-menu a{
+    text-decoration: none;
+    color: $white-color;
+    font-size: 32pt;
+    transition: all .3s ease;
+    padding: 1em 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: $white-color;
+    font-size: 14pt;
+    transition: all .3s ease;
+}
+
+@for $i from 1 through $repeat {
+    nav a:hover:nth-child(#{length($aleatcolors)}n+#{$i}) {
+        color: lighten(nth($aleatcolors, random(length($aleatcolors))), 20%);
+    }
+}
+
+@for $i from 1 through $repeat {
+    .mobile-menu a:hover:nth-child(#{length($aleatcolors)}n+#{$i}) {
+        color: lighten(nth($aleatcolors, random(length($aleatcolors))), 20%);
+    }
+}
+
+nav input{
+    font-size: 1em;
+}
+
 // LANDING PAGE
 
 .landing-page h1{
     color: $white-color;
-    opacity: .87;
     font-size: 13vw;
     font-family: 'Montserrat', sans-serif;
 }
@@ -22,7 +54,6 @@
 
 .landing-page #baseline{
     color: $white-color;
-    opacity: .87;
     font-size: 14pt;
 }
 
