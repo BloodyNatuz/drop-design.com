@@ -11,14 +11,34 @@ export default function Navbar(nav) {
 
         //appliquer display flex a mobile-menu
         menu.style.display = 'flex'
+
+        //appliquer keyframes fadeIn
+        menu.animate([
+            { opacity: 0 },
+            { opacity: 1 }
+        ], {
+            duration: 250,
+            iterations: 1
+        })
     }
 
     function menuClose(){
         //recuperer mobile-menu
         let menu = document.querySelector('.mobile-menu')
 
-        //appliquer display flex a mobile-menu
-        menu.style.display = 'none'
+        //appliquer keyframes fadeOut
+        menu.animate([
+            { opacity: 1 },
+            { opacity: 0 }
+        ], {
+            duration: 250,
+            iterations: 1
+        })
+
+        // attendre avant d'appliquer le display none
+        setTimeout(function(){
+            menu.style.display = 'none'
+        }, 250)
     }
 
     return (
