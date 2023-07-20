@@ -5,6 +5,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+h2{
+    font-size: 64pt;
+    color: $white-color;
+    text-align: center;
+}
+
 // NAVBAR
 
 .mobile-menu a{
@@ -57,3 +63,14 @@ nav input{
     font-size: 14pt;
 }
 
+.use-content{
+    color: $white-color;
+}
+
+.use-content h3{
+    font-size: 30pt;
+}
+
+.use-content p{
+    font-size: 14pt;
+}
