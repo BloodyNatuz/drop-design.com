@@ -8,56 +8,72 @@
     text-align: center;
 }
 
-// Circle animation
+// Arrow anim
 
-.landing-page .body-display{
-    margin-top: 10vh;
-    margin-bottom: -20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.landing-page .circle {
-    height: 160px;
-    width: 160px;
-    border: 3px solid white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.circle2 {
-    height: 90px;
-    width: 90px;
-    border: 3px solid white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.landing-page .circle3 {
-    height: 50px;
-    width: 50px;
-    border: 5px solid white;
-    border-radius: 50%;
-}
-
-.landing-page .anim-pulse {
-    animation: 2.5s pulse infinite;
-}
-
-@keyframes pulse {
-    0% {
-        opacity: 1;
-        transform: scale3d(0, 0, 0);
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
     }
-    100% {
-        opacity: 0;
+    40% {
+      -moz-transform: translateY(-30px);
+      transform: translateY(-30px);
     }
-}
+    60% {
+      -moz-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 60px;
+    opacity: .87;
+  }
+
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }  
 
 // RESPONSIVE MOBILE
 
