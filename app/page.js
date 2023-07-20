@@ -18,18 +18,7 @@ export default function Landing() {
           </motion.div>
           
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ y: 10, opacity: 0 }} transition={{ duration: .5, delay: 2.5 }}>
-            <a href="/pages/home">
-              <div class="body-display">
-                  <div class="box-display">
-                      <div class="circle anim-pulse">
-                        <div class="circle2">
-                          <div class="circle3 anim-pulse">
-                          </div>                 
-                        </div>
-                      </div>
-                  </div>
-              </div>
-            </a>
+            <div class="arrow bounce"><img src='/img/arrow_down.svg' alt='Flèche indiquant le bas'></img></div>
           </motion.div>
 
         </div>
