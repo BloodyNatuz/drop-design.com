@@ -28,19 +28,19 @@ export default function Landing() {
     </section>
     
     <motion.section className='section-scroll'>
-      <motion.h2 initial={{ y:50, opacity:0 }} whileInView={{ y:0, opacity:1 }} transition={{ duration:.5, delay:.5 }}>Suivez Drop Design</motion.h2>
+      <motion.h2 initial={{ y:50, opacity:0 }} whileInView={{ y:0, opacity:1 }} viewport={{ once:true }} transition={{ duration:.5, delay:.5 }}>Suivez Drop Design</motion.h2>
       <div className='use-section'>
         <div className='use-left'>
-          <motion.div className='use-part' initial={{ x:-200, opacity:0 }} whileInView={{ x:0, opacity:1 }} transition={{ duration:.5, delay:1 }}>
-            <img src='/img/circle-veille.webp' alt='Cercle entouré de cercles de couleurs rouge-rose'></img>
+          <motion.div className='use-part' initial={{ x:-200, opacity:0 }} whileInView={{ x:0, opacity:1 }} viewport={{ once:true }} transition={{ duration:.5, delay:1 }}>
+            <motion.img src='/img/circle-veille.webp' alt='Cercle entouré de cercles de couleurs rouge-rose' animate={{ opacity:[.5, 1, .5], scale:[.9, 1, .9] }} transition={{ easeInOut:"linear", duration: 3, repeat: Infinity}}></motion.img>
             <div className='use-content'>
               <h3>Veille</h3>
               <p>Mettez vous à jour sur l’actualités du webdesign, découvrez les dernières tendances du web.</p>
             </div>
           </motion.div>
 
-          <motion.div className='use-part' initial={{ x:-200, opacity:0 }} whileInView={{ x:0, opacity:1 }} transition={{ duration:.5, delay:1 }}>
-            <img src='/img/circle-discover.webp' alt='Cercle entouré de cercles de couleurs vert'></img>
+          <motion.div className='use-part' initial={{ x:-200, opacity:0 }} whileInView={{ x:0, opacity:1 }} viewport={{ once:true }} transition={{ duration:.5, delay:1 }}>
+            <motion.img src='/img/circle-discover.webp' alt='Cercle entouré de cercles de couleurs vert' animate={{ opacity:[.5, 1, .5], scale:[.9, 1, .9] }} transition={{ easeInOut:"linear", duration: 3, repeat: Infinity}}></motion.img>
             <div className='use-content'>
               <h3>Découverte</h3>
               <p>Découvrez des astuces et des méthodes pour parfaire votre talents de webdesigner.</p>
@@ -49,8 +49,8 @@ export default function Landing() {
         </div>
 
         <div className='use-right'>
-          <motion.div className='use-part' initial={{ x:200, opacity:0 }} whileInView={{ x:0, opacity:1 }} transition={{ duration:.5, delay:1 }}>
-            <img src='/img/circle-inspi.webp' alt='Cercle entouré de cercles de couleurs bleu'></img>
+          <motion.div className='use-part' initial={{ x:200, opacity:0 }} whileInView={{ x:0, opacity:1 }} viewport={{ once:true }} transition={{ duration:.5, delay:1 }}>
+            <motion.img src='/img/circle-inspi.webp' alt='Cercle entouré de cercles de couleurs bleu' animate={{ opacity:[.5, 1, .5], scale:[.9, 1, .9] }} transition={{ easeInOut:"linear", duration: 3, repeat: Infinity}}></motion.img>
             <div className='use-content'>
               <h3>Inspiration</h3>
               <p>Inspirez vous des meilleurs design web et ajoutez-y votre style pour un rendu d’exception.</p>
