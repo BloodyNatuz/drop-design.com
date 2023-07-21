@@ -157,13 +157,13 @@
 
     .use-section{
         flex-direction: column;
-        height: 150vh;
+        height: 200vh;
     }
 
     .use-section .use-left{
       justify-content: space-between;
       height: 50%;
-      padding-bottom: 1em;
+      padding-bottom: 5em;
     }
 
     .use-section .use-left .use-part{
@@ -182,7 +182,6 @@
 
     .use-section .use-right{
       height: fit-content;
-      justify-content: flex-start;
     }
 
     .use-section img{
@@ -195,7 +194,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  }
+      padding-top: 20vh;
+    }
 
     .use-section .use-right .use-part .use-content{
       text-align: center;
