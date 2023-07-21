@@ -28,13 +28,12 @@ export default function Landing() {
     </section>
     
     <motion.section className='section-scroll'>
-      <motion.h2 initial={{ y:50, opacity:0 }} whileInView={{ y:0, opacity:1 }} viewport={{ once:true }} transition={{ duration:.5, delay:.5 }}>Suivez Drop Design</motion.h2>
       <div className='use-section'>
         <div className='use-left'>
           <motion.div className='use-part' initial={{ x:-200, opacity:0 }} whileInView={{ x:0, opacity:1 }} viewport={{ once:true }} transition={{ duration:.5, delay:1 }}>
             <motion.img src='/img/circle-veille.webp' alt='Cercle entouré de cercles de couleurs rouge-rose' animate={{ opacity:[.5, 1, .5], scale:[.9, 1, .9] }} transition={{ easeInOut:"linear", duration: 3, repeat: Infinity}}></motion.img>
             <div className='use-content'>
-              <h3>Veille</h3>
+              <h2>Veille</h2>
               <p>Mettez vous à jour sur l’actualités du webdesign, découvrez les dernières tendances du web.</p>
             </div>
           </motion.div>
@@ -42,7 +41,7 @@ export default function Landing() {
           <motion.div className='use-part' initial={{ x:-200, opacity:0 }} whileInView={{ x:0, opacity:1 }} viewport={{ once:true }} transition={{ duration:.5, delay:1 }}>
             <motion.img src='/img/circle-discover.webp' alt='Cercle entouré de cercles de couleurs vert' animate={{ opacity:[.5, 1, .5], scale:[.9, 1, .9] }} transition={{ easeInOut:"linear", duration: 3, repeat: Infinity}}></motion.img>
             <div className='use-content'>
-              <h3>Découverte</h3>
+              <h2>Découverte</h2>
               <p>Découvrez des astuces et des méthodes pour parfaire votre talents de webdesigner.</p>
             </div>
           </motion.div>
@@ -52,7 +51,7 @@ export default function Landing() {
           <motion.div className='use-part' initial={{ x:200, opacity:0 }} whileInView={{ x:0, opacity:1 }} viewport={{ once:true }} transition={{ duration:.5, delay:1 }}>
             <motion.img src='/img/circle-inspi.webp' alt='Cercle entouré de cercles de couleurs bleu' animate={{ opacity:[.5, 1, .5], scale:[.9, 1, .9] }} transition={{ easeInOut:"linear", duration: 3, repeat: Infinity}}></motion.img>
             <div className='use-content'>
-              <h3>Inspiration</h3>
+              <h2>Inspiration</h2>
               <p>Inspirez vous des meilleurs design web et ajoutez-y votre style pour un rendu d’exception.</p>
             </div>
           </motion.div>
