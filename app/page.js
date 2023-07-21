@@ -48,15 +48,7 @@ export default function Landing() {
         </div>
 
         <div className='use-right'>
-          <motion.div className='use-part desktop' initial={{ x:200, opacity:0 }} whileInView={{ x:0, opacity:1 }} viewport={{ once:true }} transition={{ duration:.5, delay:1 }}>
-            <motion.img src='/img/circle-inspi.webp' alt='Cercle entouré de cercles de couleurs bleu' animate={{ opacity:[.5, 1, .5], scale:[.9, 1, .9] }} transition={{ easeInOut:"linear", duration: 3, repeat: Infinity}}></motion.img>
-            <div className='use-content'>
-              <h2>Inspiration</h2>
-              <p>Inspirez vous des meilleurs design web et ajoutez-y votre style pour un rendu d’exception.</p>
-            </div>
-          </motion.div>
-
-          <motion.div className='use-part mobile' initial={{ x:-200, opacity:0 }} whileInView={{ x:0, opacity:1 }} viewport={{ once:true }} transition={{ duration:.5, delay:1 }}>
+          <motion.div className='use-part' initial={{ x:-200, opacity:0 }} whileInView={{ x:0, opacity:1 }} viewport={{ once:true }} transition={{ duration:.5, delay:1 }}>
             <motion.img src='/img/circle-inspi.webp' alt='Cercle entouré de cercles de couleurs bleu' animate={{ opacity:[.5, 1, .5], scale:[.9, 1, .9] }} transition={{ easeInOut:"linear", duration: 3, repeat: Infinity}}></motion.img>
             <div className='use-content'>
               <h2>Inspiration</h2>
