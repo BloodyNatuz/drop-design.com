@@ -126,10 +126,6 @@
     margin-left: -5em;
 }
 
-.use-section .use-right .mobile{
-    display: none !important;
-}
-
 .use-section .use-right .use-part{
     height: 100%;
     display: flex;
@@ -167,7 +163,6 @@
     .use-section .use-left{
       justify-content: space-between;
       height: 50%;
-      padding-bottom: 5em;
     }
 
     .use-section .use-left .use-part{
@@ -186,14 +181,7 @@
 
     .use-section .use-right{
       height: fit-content;
-    }
-
-    .use-section .use-right .mobile{
-      display: flex;
-    }
-
-    .use-section .use-right .desktop{
-      display: none !important;
+      padding-bottom: 5em;
     }
 
     .use-section img{
