@@ -153,7 +153,61 @@
 // USE SECTION RESPONSIVE MOBILE
 
 @media (max-width: 1000px) {
+    .section-scroll h2{
+      margin-bottom: 2em;
+    }
+
     .use-section{
         flex-direction: column;
+        height: 150vh;
+    }
+
+    .use-section .use-left{
+      justify-content: space-between;
+      height: 50%;
+      padding-bottom: 1em;
+    }
+
+    .use-section .use-left .use-part{
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em 0;
+    }
+
+    .use-section .use-left .use-part .use-content{
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .use-section .use-right{
+      height: fit-content;
+      justify-content: flex-start;
+    }
+
+    .use-section img{
+        height: 15vh;
+        width: auto;
+    }
+
+    .use-section .use-right .use-part{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+    .use-section .use-right .use-part .use-content{
+      text-align: center;
+      margin-right: 0;
+    }
+
+    .use-section .use-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
