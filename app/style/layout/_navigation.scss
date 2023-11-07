@@ -24,6 +24,36 @@ nav .nav-part-ext{
     align-items: center;
 }
 
+nav .newsletter-input{
+    background-color: transparent;
+    border: $white-color 1px solid;
+    border-radius: .5em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    outline: none;
+    color: $white-color;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    width: 50%;
+    opacity: .75;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .newsletter-input:active, nav .newsletter-input:focus{
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+nav .newsletter-input img{
+    color: white;
+    width: 20px;
+    height: auto;
+    margin: 0;
+}
+
 nav .nav-part-int{
     width: 25%;
     display: flex;
