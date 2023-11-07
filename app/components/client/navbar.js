@@ -70,7 +70,11 @@ export default function Navbar(nav) {
                 </div>
 
                 <div className='nav-part-ext'>
-                    <input type="text" placeholder="Recevoir la newsletter"></input>
+                    <form className='newsletter-input'>
+                        <input type="text" placeholder="Recevoir la newsletter"></input>
+                        <button type='submit'><img src='/img/search.svg'></img></button>
+                    </form>
+                    
                 </div>
             </motion.nav>
         </AnimatePresence>
