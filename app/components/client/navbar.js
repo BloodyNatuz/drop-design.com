@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import NewsletterForm from '../client/newsletterForm'
 import { motion, AnimatePresence, Variant } from "framer-motion"
 
 export default function Navbar(nav) {
@@ -41,6 +41,8 @@ export default function Navbar(nav) {
         }, 250)
     }
 
+
+
     return (
         <>
         <motion.div className='mobile-menu'>
@@ -70,11 +72,7 @@ export default function Navbar(nav) {
                 </div>
 
                 <div className='nav-part-ext'>
-                    <form className='newsletter-input'>
-                        <input type="text" placeholder="Recevoir la newsletter"></input>
-                        <button type='submit'><img src='/img/search.svg'></img></button>
-                    </form>
-                    
+                    <NewsletterForm/>
                 </div>
             </motion.nav>
         </AnimatePresence>
