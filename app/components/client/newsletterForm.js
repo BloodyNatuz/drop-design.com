@@ -9,7 +9,7 @@ export default function NewsletterForm(){
     const handleSubmit = async (event) => {
         event.preventDefault();
         try{
-            const response = fetch('http://localhost:3000/api/newsletter', {
+            const response = await fetch('http://localhost:3000/api/newsletter', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({email})
